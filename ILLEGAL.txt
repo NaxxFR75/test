@@ -1,0 +1,119 @@
+VOICI LE DOC PRINCIPAL POUR L'ILLEGAL : 📌
+Les scripts ont été utilisé pour des serveurs RolePlay, ils sont poussés mais aussi simple à l'utilisation !
+Vous avez tous les informations pour pouvoir comprendre les scripts.
+Le mieux pour comprendre le script reste de le tester directement en jeu.
+
+Vous avez à disposition 5 dépendance :
+
+- hacking
+- lockpick
+- memorygame
+- PolyZone
+
+Ces dépendances sont inutiles à toucher, si vous les enlevez et qu'un des scripts ne fonctionnent plus c'est que le script est obligé d'avoir cette dépendance !
+
+TreeSpace_Atm 📌: Le script fonctionne sur toute les ATM, pour le faire fonctionner il faut avoir un pied de biche dans la main et de l'utiliser avec le ALT (ox_target)
+REQUIS ITEM : "WEAPON_CROWBAR"
+REQUIS POLICE : 2
+
+TreeSpace_Fleeca 📌: Le script fonctionne sur toute les Fleeca, pour le faire fonctionner il faut tirer n'importe ou devant le PNJ, puis une animation commence et il va vous ouvrir la porte blindé dans laquelle vous
+avez besoins d'un sac pour prendre les récompenses et d'une perçeuse pour les casiers blindés
+REQUIS ITEM : "drill" & "bag" // (DES ARMES)
+REQUIS POLICE : 4
+POINT DE FIN (VENTE) : 1291.19, -3143.2, 4.90626
+
+TreeSpace_Bijouterie 📌: Le script fonctionne sur la seule bijouterie de la MAP, pour le faire fonctionner il faut aller voir des personnes pour commencer le braquage, vous vous rendez à la bijouterie vous avez besoins
+de grenade lacrymogènes ensuite une cinématique ce lance, dirigé vous vers la bijouterie et volez/casser les vitres pour prendre les bijoux et allez au point de vente pour pouvoir gagner de l'argent
+REQUIS POLICE : 6
+REQUIS ITEM : "weapon_bzgas" "cutter" "bag" "gasmask" // (DES ARMES)
+REQUIS ITEM POUR CASSER LES VITRES POUR PRENDRE LES BIJOUX : "WEAPON_ASSAULTRIFLE" "WEAPON_CARBINERIFLE" "WEAPON_ADVANCEDRIFLE" "WEAPON_BULLPUPRIFLE"
+POINT POUR COMMENCER : -846.42, -1307.5, 5.00017
+POINT DE FIN (VENTE) : 832.607, -2954.4, 4.90086
+
+TreeSpace_Maison 📌: Le script fonctionne sur certain maison, pour le faire fonctionner vous devez avoir un lockpick et reussir à crocheter la serrure, ensuite vous rentrez et volez tous à l'intérieur
+REQUIS ITEM : "lockpick"
+WEBHOOK : server/sv_main.lua = Ligne 60
+POINT MAISON (5) : "-174.7202, 502.5304, 137.4204" "85.1617, 561.7064, 182.7731" "-1226.2414550781, 6958.9970703125, 20.587398529053" "-622.86590576172, 7308.41796875, 58.960903167725" "-612.91577148438, 7540.216796875, 7.7356109619141"
+
+TreeSpace_Superette 📌: Le script fonctionne sur toute les superette, pour le faire fonctionner vous devez avoir un lockpick, mettez vous devant la caisse avec le ALT (ox_target) puis faite cliquez, 
+ensuite vous allez recevoir l'argent, si vous avez de la chance vous allez recevoir un code pour ouvrir un coffre blindé au fond de la superette ou sinon vous devez répondre aux questions sur le PC 
+pour avoir le code et vous recevrez encore de l'argent si vous arrivez à l'ouvrir.
+REQUIS ITEM : "lockpick"
+REQUIS POLICE : 3
+QUESTION PC : 
+    question1 = {
+        question = 'Qu\'est-ce qu\'un GPU ?',
+        question1Answer = 'Carte Graphique',
+    },
+    question2 = {
+        question = 'Qu\'est-ce qu\'un OS ?',
+        question2Answer = 'Systeme Exploitation',
+    },
+    question3 = {
+        question = 'Qu\'est-ce qu\'un CPU ?',
+        question3Answer = 'Processeur',
+    },
+    question4 = { 
+        question = 'Que fait CTRL + A ?',
+        icon = 'keyboard',
+        options = {
+            option1 = 'Copier le texte',
+            option2 = 'Coller le texte',
+            option3 = 'Selectioner Tout',
+            option4 = 'Imprimer la page'
+            question4Answer = 3 
+        }
+ },
+
+TreeSpace_trainheist 📌: Le script fonctionne sur le train au nord, vous devez vour rendre a un endroit pour commencer le braquage de train, vous allez avoir un point GPS, quand vous etes arrivé, ils y auront beaucoup
+de PNJ qui vous tiront dessus avec des armes lourdes, après que tous les PNJ soient mort vous pouvez ouvir les deux containers sur le train avec un cutter et tous prendre avec un sac
+REQUIS ITEM : "cutter" "bag" // (DES ARMES)
+REQUIS POLICE : 4
+NOMBRE DE PNJ : 8
+POINT POUR COMMENCER : -687.82, -2417.1, 13.9445
+POINT DE FIN (VENTE) : -1690.6, -916.19, 6.78323
+POINT DU TRAIN : 2872.028, 4544.253, 47.758
+
+TreeSpace_pacificheist 📌: Le script fonctionne sur la pacific banque, vous devez avoir de la bombe pour pouvoir ouvrir la première porte ensuite vous descendez puis vous allez encore ouvrir une porte avec une bombe 
+ensuite une autre porte avec un ordinateur, vous allez pouvoir percer des casiers pour récupérer les récompenses avec votre sac
+REQUIS ITEM : "drill" "bag" "drill" "c4_bomb" "thermite_bomb" "laptop" "hack_usb" // (DES ARMES) - AVOIR PLUSIEURS BOMBES SUR VOUS !!
+REQUIS POLICE : 10
+ACTION : 8 (4 = PLANT // 2 = HACKING // 2 = VAULT) 
+POINT POUR COMMENCER : -622.70, 328.733, 85.3010
+POINT DE FIN (VENTE) : -1228.0, -662.41, 39.3575
+
+
+DROGUES 📌: 
+
+VOUS AVEZ PLUSIEURS DROGUES DANS LAQUELLE VOUS AVEZ DES LABOS PUBLIC, VOUS DEVEZ TROUVER DES CARTES D'ACCES POUR POUVOIR RENTRER DANS LES LABOS, DES ITEMS OBLIGATOIRES POUR POUVOIR FAIRE CERTAINE DROGUE.
+ENSUITE LA DROGUE FAITES, VOUS POUVEZ LA VENDRE EN ALLANT DANS UNE CABINE TELEPHONIQUE PUIS LE CLIENT VOUS DONNERA UNE ADRESSE ET VOUS FEREZ LA TRANSACTION
+Le script est complet, poussé pour le roleplay, d'autres chose sont à disposition !
+
+MENU QUARTIER 📌: 
+
+Pour le menu quartier, tous est en core, vous pouvez rajouter en illimité des cités dans laquelle ils sont accès à ces fonctions en dupliquant ou dans le menu directement dans le config.
+Vous avez à disposition :
+
+- Recrutement = un point devant la cité avec un PNJ qui donne des infos pour savoir si les recrutements quartiers sont ouverts
+- Coffre = Export via l'ox_inventory, toute les personnes faisant partis du quartier y ont accès
+- Menu (F7) = Vous pouvez regarder vos informations sur vous et votre quartier pouvoir fouillet (via l'ox_inventory), ligoter quelqu'un le mettre dans un véhicule, ou le transporter avec toi.
+
+VDA 📌: 
+
+Les vendeurs d'armes ont une villa dans laquelle il y a des farms de 4 items (METAUX, MECHE, CANON, LEVIER), avec ces farms vous pouvez aller dans le script de craft (via l'ox_inventory) pouvoir faire des armes
+vous avez un temps pour faire créer une arme, et il faut avoir un bon nombre d'item pour limité le nombre d'arme en circulation
+Modifier le craft : ox_inventory/data/crafting.lua
+Ils sont aussi à disposition d'un garage, coffre, menu gestion
+Leur orga se situe a CAYO PERICO
+
+BLANCHIMENT 📌:
+
+Les blanchisseurs s'occupent de blanchir grace à un menu de l'argent sale en argent propre, nous avons pas mis en place de %, nous avons laissé les blanchisseurs prendre un bénéfice sur la conversion.
+Dans le script vous pouvez rajouter la possibilité de mettre un % d'argent pris
+leur orga se trouve en dessous du XPO
+
+BLACK MARKET 📌: 
+
+Le plus important je pense, dans le black market vous allez avoir à disposition tous les items nécessaires pour pouvoir faire des braquages !!!
+Les joueurs devront chercher le point, ensuite acheter les items qui souhaitent
+POINT : -1568.4765625, -233.0982208252, 49.46798324585
